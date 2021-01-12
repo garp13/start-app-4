@@ -1,0 +1,119 @@
+.homePage{
+    background-color:rgba( #bfbfbf, .5);
+    height: 81vh;
+    width: 100%;
+    border: 1px solid #fafafa;
+    margin-top: 60px;
+    box-sizing: border-box;
+    position: relative;
+    .cardPage{
+        padding: 20px 0;
+        .cityName{
+            padding: 5px 20px;
+            max-width: 100%;
+            display: inline;
+            border-radius: 0 25px 25px 0;
+            background-color: #d9d9d9;
+            font-weight: 700;
+            color:#fff566;
+            font-size: 1.5rem;
+        }
+    }
+
+    .temperature{
+        padding-right: 30px;
+        font-size: 2em;
+        float:right;
+        color: #ffffff;
+        line-height: 20px;
+        h3{
+            font-weight: 100;
+            font-size: 2em;
+            color:#ffffff;
+        }
+        p{
+            float: right;
+            .temperature-active{
+                
+                color:#ffffff;
+                cursor: pointer;
+            }
+    
+            .temperature-not-active{
+                
+                color:#d9d9d9;
+                cursor: pointer;
+            }
+        }
+        
+    }
+
+    .weatherCard{
+        line-height: 1.6;
+        margin-left: 20px;
+        font-size: 1rem;
+        color:#ffffff;
+        p{
+            padding-left: 5px;
+            margin:0;
+        }
+        .time{
+            border-left: 1px solid #ff4d4f;
+        }
+        .day{
+            border-left: 1px solid #ff7a45;
+        }
+
+        .humidity{
+            border-left: 1px solid #ffa940;
+        }
+
+        .description{
+            border-left: 1px solid #ffc53d;
+        }
+    }
+    img.iconWeather{
+        animation: trans 5s infinite;
+    }
+    .tomorrowWeather{
+        text-align: center;
+        position: relative;
+        bottom:-3px;
+        color:#ffffff;
+        h3{
+            color: #ffffff;
+        }
+        
+        .ant-col{
+            border: 1px solid #fafafa;
+            border-bottom: none;
+        }
+    }
+}
+
+.tagCity{
+    .ant-col{
+        button{
+            width: 100%;
+            cursor: pointer;
+            color: #ff7a45;
+        }
+    }
+}
+@keyframes trans{
+    0% {
+        transform: translateX(20px);
+    }
+    25% {
+        transform: translateX(-20px);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    75% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(20px);
+    }
+}
